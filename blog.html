@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — RijGemak Voorbeeld | Rijschool Tips & Advies Rotterdam</title>
+  <meta name="description" content="Tips over rijlessen, theorie-examen, verkeersregels en faalangst. Het blog van RijGemak Voorbeeld, de rijschool in Rotterdam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Rij<span>Gemak</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#diensten">Diensten</a></li>
+          <li><a href="index.html#cijfers">Cijfers</a></li>
+          <li><a href="index.html#ervaringen">Ervaringen</a></li>
+          <li><a href="index.html#gallerij">Gallerij</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="index.html#contact" class="nav-cta">Gratis Proefles</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container" data-animate="fade-up">
+      <div class="section-label"><i data-lucide="pen-tool" style="width:16px;height:16px;"></i> Blog</div>
+      <h1 class="section-title">Rijlestips & verkeersinzichten</h1>
+      <p class="section-subtitle" style="margin:0 auto;">Van examenvragen tot rijvaardigheid — handige artikelen voor elke (aankomende) automobilist.</p>
+    </div>
+  </section>
+
+  <!-- BLOG FILTERS -->
+  <section style="padding:0 0 20px;background:var(--bg-white);">
+    <div class="container">
+      <div class="blog-filters" data-animate="fade-up">
+        <button class="filter-btn active">Alles</button>
+        <button class="filter-btn">Rijlessen</button>
+        <button class="filter-btn">Theorie</button>
+        <button class="filter-btn">Tips</button>
+        <button class="filter-btn">Ervaring</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG GRID -->
+  <section style="padding:0 0 100px;background:var(--bg-white);">
+    <div class="container">
+      <div class="blog-grid">
+
+        <!-- Article 1 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="0">
+          <div class="blog-card-image">
+            <img src="images/hero.jpg" alt="Rijles beginner Rotterdam" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Rijlessen</span>
+              <span class="blog-date">10 april 2026</span>
+            </div>
+            <h3><a href="#">Beginnen met rijlessen: de complete startersgids</a></h3>
+            <p class="blog-excerpt">Alles wat je moet weten voordat je je eerste les boekt. Van gezondheidsverklaring tot wat je moet dragen — we nemen je stap voor stap mee door het hele proces zodat je goed voorbereid aan de start verschijnt.</p>
+            <a href="#" class="blog-read-more">Lees verder <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="100">
+          <div class="blog-card-image">
+            <img src="images/about.jpg" alt="CBR theorie-examen tips" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Theorie</span>
+              <span class="blog-date">5 april 2026</span>
+            </div>
+            <h3><a href="#">CBR theorie-examen: de 8 meest gemaakte fouten</a></h3>
+            <p class="blog-excerpt">Elk jaar zakken duizenden kandidaten op dezelfde vragen. We analyseren de 8 meest voorkomende fouten bij het CBR theorie-examen en laten zien hoe je ze vermijdt met simpele geheugensteuntjes.</p>
+            <a href="#" class="blog-read-more">Lees verder <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="200">
+          <div class="blog-card-image">
+            <img src="images/carousel.jpg" alt="Faalangst overwinnen" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Ervaring</span>
+              <span class="blog-date">29 maart 2026</span>
+            </div>
+            <h3><a href="#">Ravi over zijn spoedcursus: "In 3 weken mijn rijbewijs"</a></h3>
+            <p class="blog-excerpt">Ravi Patel had weinig tijd maar moest snel zijn rijbewijs halen voor zijn nieuwe baan. Lees hoe hij met de intensieve spoedcursus van RijGemak in slechts 3 weken zijn doel bereikte.</p>
+            <a href="#" class="blog-read-more">Lees verder <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="0">
+          <div class="blog-card-image">
+            <img src="images/project1.jpg" alt="Gevaarherkenning oefenen" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Theorie</span>
+              <span class="blog-date">22 maart 2026</span>
+            </div>
+            <h3><a href="#">Gevaarherkenning: zo oefen je effectief voor het examen</a></h3>
+            <p class="blog-excerpt">Het onderdeel gevaarherkenning schrikt veel leerlingen af. Wij leggen uit hoe de vragen in elkaar zitten, waar je op moet letten in de filmpjes en hoe je je score snel kunt verhogen.</p>
+            <a href="#" class="blog-read-more">Lees verder <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="100">
+          <div class="blog-card-image">
+            <img src="images/detail.jpg" alt="Autorijden bij regen tips" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Tips</span>
+              <span class="blog-date">15 maart 2026</span>
+            </div>
+            <h3><a href="#">Veilig rijden bij regen: 7 tips die levens redden</a></h3>
+            <p class="blog-excerpt">Aquaplaning, verminderd zicht, langere remafstand — regen maakt autorijden uitdagender. Leer hoe je met deze 7 praktische tips veilig en ontspannen door de regen rijdt, ook als beginner.</p>
+            <a href="#" class="blog-read-more">Lees verder <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="blog-card" data-animate="fade-up" data-delay="200">
+          <div class="blog-card-image">
+            <img src="images/team.jpg" alt="Rijschool kiezen Rotterdam tips" loading="lazy">
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-category">Tips</span>
+              <span class="blog-date">8 maart 2026</span>
+            </div>
+            <h3><a href="#">Automaat of handgeschakeld? De voor- en nadelen in 2026</a></h3>
+            <p class="blog-excerpt">Steeds meer leerlingen kiezen voor een automatrijbewijs. Maar is dat verstandig? We vergelijken de kosten, het aantal lessen en de toekomstperspectieven van beide opties.</p>
+            <a href="#" class="blog-read-more">Lees verder <i data-lucide="arrow-right" style="width:16px;height:16px;"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-box" data-animate="fade-up">
+        <h2>Klaar om te beginnen met rijlessen?</h2>
+        <p>Boek je gratis proefles en ontdek waarom 3.200+ leerlingen kozen voor RijGemak Voorbeeld in Rotterdam.</p>
+        <a href="tel:+31101234567" class="btn-primary">
+          <i data-lucide="phone" style="width:18px;height:18px;"></i>
+          Bel Nu: 010 - 123 4567
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Rij<span>Gemak</span></div>
+          <p>De persoonlijkste rijschool van Rotterdam. Al 18 jaar helpen we leerlingen om veilig, ontspannen en met plezier hun rijbewijs te halen.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Diensten</h4>
+          <ul>
+            <li><a href="index.html#diensten">Autorijlessen</a></li>
+            <li><a href="index.html#diensten">Spoedcursus</a></li>
+            <li><a href="index.html#diensten">Motorrijlessen</a></li>
+            <li><a href="index.html#diensten">Theorie Cursus</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informatie</h4>
+          <ul>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#ervaringen">Reviews</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+31101234567">010 - 123 4567</a></li>
+            <li><a href="mailto:info@rijgemakvoorbeeld.nl">info@rijgemakvoorbeeld.nl</a></li>
+            <li>Coolsingel 200</li>
+            <li>3012 AG Rotterdam</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 RijGemak Voorbeeld. Alle rechten voorbehouden.</span>
+        <span>KvK: 87654321 | BTW: NL009876543B01</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STUDIOLEE BADGE -->
+  <a href="https://www.studiolee.nl/rijscholen" class="studiolee-badge" target="_blank" rel="noopener">
+    Website door <span>StudioLee</span>
+  </a>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    lucide.createIcons();
+
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.querySelectorAll('[data-animate="fade-up"]').forEach(el => {
+      const delay = parseInt(el.dataset.delay || 0) / 1000;
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
+        y: 50, opacity: 0, duration: 0.8, delay, ease: 'power3.out'
+      });
+    });
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

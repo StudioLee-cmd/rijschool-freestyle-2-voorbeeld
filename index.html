@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RijGemak Voorbeeld — Rijschool Rotterdam</title>
+  <meta name="description" content="RijGemak Voorbeeld is de rijschool in Rotterdam waar autorijden leuk en gemakkelijk wordt. Ervaren instructeurs, moderne lesauto's en een persoonlijk leerplan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Rij<span>Gemak</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#diensten" class="active">Diensten</a></li>
+          <li><a href="#cijfers">Cijfers</a></li>
+          <li><a href="#ervaringen">Ervaringen</a></li>
+          <li><a href="#gallerij">Gallerij</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#contact" class="nav-cta">Gratis Proefles</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content" data-animate="fade-right">
+          <div class="hero-badge">
+            <i data-lucide="shield-check" style="width:16px;height:16px;"></i>
+            CBR-gecertificeerde Instructeurs
+          </div>
+          <h1>Autorijden leren wordt <span>een makkie</span></h1>
+          <p class="hero-text">
+            Bij RijGemak geloven we dat iedereen kan leren autorijden. Met geduld, humor en een bewezen methode krijg je jouw rijbewijs sneller dan je denkt.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">
+              <i data-lucide="calendar" style="width:18px;height:18px;"></i>
+              Plan je Proefles
+            </a>
+            <a href="#diensten" class="btn-outline">
+              <i data-lucide="arrow-down" style="width:18px;height:18px;"></i>
+              Ontdek Meer
+            </a>
+          </div>
+        </div>
+        <div class="hero-image" data-animate="fade-left">
+          <img src="images/hero.jpg" alt="Rijles in Rotterdam met RijGemak" loading="eager">
+          <div class="hero-float-stat">
+            <div class="number">94%</div>
+            <div class="label">Slaagt in 1x</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="ticker" style="background:var(--color-accent,#f5a623);padding:12px 0;overflow:hidden;">
+    <div style="display:flex;gap:48px;animation:tickerScroll 20s linear infinite;white-space:nowrap;">
+      <span><iconify-icon icon="lucide:car"></iconify-icon> Rijlessen B</span><span><iconify-icon icon="lucide:zap"></iconify-icon> Spoedcursus</span><span><iconify-icon icon="lucide:bike"></iconify-icon> Motor A</span><span><iconify-icon icon="lucide:heart"></iconify-icon> Faalangst</span><span><iconify-icon icon="lucide:refresh-cw"></iconify-icon> Opfris</span><span><iconify-icon icon="lucide:book-open"></iconify-icon> Theorie</span><span><iconify-icon icon="lucide:car"></iconify-icon> Rijlessen B</span><span><iconify-icon icon="lucide:zap"></iconify-icon> Spoedcursus</span><span><iconify-icon icon="lucide:bike"></iconify-icon> Motor A</span><span><iconify-icon icon="lucide:heart"></iconify-icon> Faalangst</span><span><iconify-icon icon="lucide:refresh-cw"></iconify-icon> Opfris</span><span><iconify-icon icon="lucide:book-open"></iconify-icon> Theorie</span>
+    </div>
+  </div>
+  <style>@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}</style>
+  <style>.ticker span{display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;font-weight:700;color:var(--color-bg,#0a0a0f);text-transform:uppercase;letter-spacing:0.05em;}</style>
+
+
+  
+  <!-- ======================== BEFORE / AFTER ======================== -->
+  <section class="ba-section" style="height:100vh;position:relative;overflow:hidden;background:#000;">
+    <div style="width:100%;height:100%;position:relative;">
+      <img src="images/craft.jpg" alt="Na" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;">
+      <img src="images/hero.jpg" alt="Voor" id="baBefore" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;">
+      <div id="baLabel" style="position:absolute;z-index:3;bottom:10%;left:50%;transform:translateX(-50%);text-align:center;opacity:0;">
+        <span style="display:inline-block;background:var(--color-accent,#C1FF72);color:#0a0a0a;padding:8px 20px;border-radius:99px;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Scroll om te zien</span>
+        <h2 style="font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.15;color:#fff;text-shadow:0 4px 20px rgba(0,0,0,0.6);">Van oud naar <em style="color:var(--color-accent,#C1FF72);">nieuw</em></h2>
+      </div>
+    </div>
+  </section>
+<!-- SERVICES -->
+  <section class="services" id="diensten">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label"><i data-lucide="layers" style="width:16px;height:16px;"></i> Ons Aanbod</div>
+        <h2 class="section-title">Alles voor jouw rijbewijs</h2>
+        <p class="section-subtitle">Van je eerste les tot het moment dat je zelfstandig de weg op gaat. Wij begeleiden je bij elke stap.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-animate="fade-up" data-delay="0">
+          <div class="service-icon"><i data-lucide="car" style="width:28px;height:28px;"></i></div>
+          <h3>Autorijlessen (B)</h3>
+          <p>Leer autorijden in een ontspannen sfeer. Onze lesauto's zijn uitgerust met dubbele bediening en je leert stap voor stap alle vaardigheden die je nodig hebt.</p>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="100">
+          <div class="service-icon"><i data-lucide="zap" style="width:28px;height:28px;"></i></div>
+          <h3>Spoedcursus</h3>
+          <p>Haast bij je rijbewijs? Met onze intensieve spoedcursus rijd je dagelijks en kun je binnen 2 tot 4 weken examen doen. Inclusief snelle CBR-reservering.</p>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="200">
+          <div class="service-icon"><i data-lucide="bike" style="width:28px;height:28px;"></i></div>
+          <h3>Motorrijlessen (A)</h3>
+          <p>Op twee wielen de vrijheid tegemoet. Wij bieden motorrijlessen voor A1, A2 en het volledige A-rijbewijs met persoonlijke begeleiding op ons oefenterrein.</p>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="300">
+          <div class="service-icon"><i data-lucide="heart" style="width:28px;height:28px;"></i></div>
+          <h3>Faalangst Coaching</h3>
+          <p>Examenstress? We hebben specialisten die je helpen om angst te overwinnen. Met ademhalingstechnieken en extra oefening ga je met vertrouwen het examen in.</p>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="400">
+          <div class="service-icon"><i data-lucide="refresh-cw" style="width:28px;height:28px;"></i></div>
+          <h3>Opfrislessen</h3>
+          <p>Al een tijdje niet gereden? Geen probleem. In een paar opfrislessen ben je weer helemaal up-to-date en rij je weer vol vertrouwen door Rotterdam.</p>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="500">
+          <div class="service-icon"><i data-lucide="book-open" style="width:28px;height:28px;"></i></div>
+          <h3>Theorie Cursus</h3>
+          <p>Online en op locatie. Met interactieve lessen, eindeloos oefenexamens en persoonlijke feedback. De meeste leerlingen slagen al na 2 weken studeren.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="cijfers">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-animate="fade-up" data-delay="0">
+          <div class="stat-number" data-count="94">0</div>
+          <div class="stat-label">% Slagingspercentage</div>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="100">
+          <div class="stat-number" data-count="3200">0</div>
+          <div class="stat-label">Blije Leerlingen</div>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="200">
+          <div class="stat-number" data-count="18">0</div>
+          <div class="stat-label">Jaar Ervaring</div>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="300">
+          <div class="stat-number" data-count="8">0</div>
+          <div class="stat-label">Ervaren Instructeurs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="ervaringen">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label"><i data-lucide="message-circle" style="width:16px;height:16px;"></i> Ervaringen</div>
+        <h2 class="section-title">Leerlingen aan het woord</h2>
+        <p class="section-subtitle">Ontdek waarom meer dan 3.200 leerlingen kozen voor RijGemak Voorbeeld in Rotterdam.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-animate="fade-up" data-delay="0">
+          <div class="stars">
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+          </div>
+          <p class="testimonial-text">"Ik was doodsbang om te rijden, maar mijn instructeur bij RijGemak maakte het echt leuk. Na 25 lessen had ik mijn rijbewijs en rij ik nu dagelijks naar mijn werk!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <div class="testimonial-name">Anna Bakker</div>
+              <div class="testimonial-role">Geslaagd in 2026</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-animate="fade-up" data-delay="150">
+          <div class="stars">
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+          </div>
+          <p class="testimonial-text">"De spoedcursus was intensief maar geweldig. Elke dag les, goede feedback en binnen 3 weken mijn rijbewijs. Perfect geregeld, inclusief CBR-reservering."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div>
+              <div class="testimonial-name">Ravi Patel</div>
+              <div class="testimonial-role">Spoedcursus — geslaagd</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-animate="fade-up" data-delay="300">
+          <div class="stars">
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:#f59e0b;"></i>
+          </div>
+          <p class="testimonial-text">"Na 2 keer gezakt bij een andere rijschool, ben ik overgestapt naar RijGemak. Andere aanpak, veel meer geduld, en ik slaagde bij de eerste poging hier!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">F</div>
+            <div>
+              <div class="testimonial-name">Fatima Yilmaz</div>
+              <div class="testimonial-role">Overgestapt en geslaagd</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallerij">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label"><i data-lucide="image" style="width:16px;height:16px;"></i> Foto's</div>
+        <h2 class="section-title">Een kijkje bij RijGemak</h2>
+        <p class="section-subtitle">Onze lesauto's, instructeurs en blije leerlingen — bekijk hoe het eraan toe gaat bij de leukste rijschool van Rotterdam.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-animate="fade-up" data-delay="0"><img src="images/hero.jpg" alt="Rijles Rotterdam" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="50"><img src="images/about.jpg" alt="Over RijGemak" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="100"><img src="images/carousel.jpg" alt="Lesauto RijGemak" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="150"><img src="images/craft.jpg" alt="Rijvaardigheid oefenen" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="200"><img src="images/cta-bg.jpg" alt="Rijschool Rotterdam" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="250"><img src="images/detail.jpg" alt="Lesauto detail" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="300"><img src="images/kitchen.jpg" alt="Theorielokaal RijGemak" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="350"><img src="images/project1.jpg" alt="Geslaagde leerling" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="400"><img src="images/project2.jpg" alt="Rijles snelweg" loading="lazy"></div>
+        <div class="gallery-item" data-animate="fade-up" data-delay="450"><img src="images/team.jpg" alt="Team RijGemak" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label"><i data-lucide="help-circle" style="width:16px;height:16px;"></i> FAQ</div>
+        <h2 class="section-title">Veelgestelde vragen</h2>
+        <p class="section-subtitle">Antwoorden op de meest gestelde vragen over onze rijlessen en het traject naar jouw rijbewijs.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active" data-animate="fade-up" data-delay="0">
+          <button class="faq-question">
+            Hoeveel lessen heb ik gemiddeld nodig?
+            <i data-lucide="plus" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-answer">
+            <p>De meeste leerlingen bij RijGemak hebben tussen de 25 en 35 lessen nodig. Tijdens je gratis proefles maken we een inschatting op basis van je natuurlijke aanleg en eerdere ervaring. Sommige leerlingen in onze spoedcursus zijn al na 20 lessen klaar.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-animate="fade-up" data-delay="100">
+          <button class="faq-question">
+            Wat kost een rijles bij RijGemak?
+            <i data-lucide="plus" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We werken met transparante prijzen en pakketvoordelen. Losse lessen, 10-lessen- en 20-lessenpakketten zijn beschikbaar. Neem contact op voor een actuele prijslijst die past bij jouw wensen en budget.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-animate="fade-up" data-delay="200">
+          <button class="faq-question">
+            Kan ik mijn lestijden zelf kiezen?
+            <i data-lucide="plus" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Ja, wij passen ons aan jouw schema aan. Lessen zijn mogelijk van maandag tot zaterdag, zowel overdag als 's avonds. Via onze online planner kun je eenvoudig je lessen inplannen en wijzigen.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-animate="fade-up" data-delay="300">
+          <button class="faq-question">
+            Halen jullie mij thuis of op school op?
+            <i data-lucide="plus" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absoluut! We halen je op en brengen je terug op een locatie naar keuze binnen Rotterdam. Of dat nu thuis, op je werk of bij school is — wij komen naar jou toe.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-animate="fade-up" data-delay="400">
+          <button class="faq-question">
+            Wat als ik niet slaag voor mijn examen?
+            <i data-lucide="plus" style="width:20px;height:20px;"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Dat overkomt de beste. We bespreken rustig de feedback van het CBR, oefenen gericht op verbeterpunten en plannen samen een herexamen. Veel leerlingen slagen de volgende keer met vlag en wimpel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-box" data-animate="fade-up">
+        <h2>Begin vandaag met rijlessen</h2>
+        <p>Boek je gratis en vrijblijvende proefles. Ontdek waarom 3.200+ leerlingen kozen voor RijGemak Voorbeeld.</p>
+        <a href="tel:+31101234567" class="btn-primary">
+          <i data-lucide="phone" style="width:18px;height:18px;"></i>
+          Bel Nu: 010 - 123 4567
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">Rij<span>Gemak</span></div>
+          <p>De persoonlijkste rijschool van Rotterdam. Al 18 jaar helpen we leerlingen om veilig, ontspannen en met plezier hun rijbewijs te halen.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Diensten</h4>
+          <ul>
+            <li><a href="#diensten">Autorijlessen</a></li>
+            <li><a href="#diensten">Spoedcursus</a></li>
+            <li><a href="#diensten">Motorrijlessen</a></li>
+            <li><a href="#diensten">Theorie Cursus</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Informatie</h4>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#ervaringen">Reviews</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+31101234567">010 - 123 4567</a></li>
+            <li><a href="mailto:info@rijgemakvoorbeeld.nl">info@rijgemakvoorbeeld.nl</a></li>
+            <li>Coolsingel 200</li>
+            <li>3012 AG Rotterdam</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 RijGemak Voorbeeld. Alle rechten voorbehouden.</span>
+        <span>KvK: 87654321 | BTW: NL009876543B01</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STUDIOLEE BADGE -->
+  <a href="https://www.studiolee.nl/rijscholen" class="studiolee-badge" target="_blank" rel="noopener">
+    Website door <span>StudioLee</span>
+  </a>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    lucide.createIcons();
+
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    mobileToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.querySelectorAll('[data-animate="fade-up"]').forEach(el => {
+      const delay = parseInt(el.dataset.delay || 0) / 1000;
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
+        y: 50, opacity: 0, duration: 0.8, delay, ease: 'power3.out'
+      });
+    });
+
+    document.querySelectorAll('[data-animate="fade-right"]').forEach(el => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' },
+        x: -60, opacity: 0, duration: 1, ease: 'power3.out'
+      });
+    });
+
+    document.querySelectorAll('[data-animate="fade-left"]').forEach(el => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' },
+        x: 60, opacity: 0, duration: 1, ease: 'power3.out'
+      });
+    });
+
+    document.querySelectorAll('[data-count]').forEach(el => {
+      const target = parseInt(el.dataset.count);
+      gsap.to(el, {
+        scrollTrigger: { trigger: el, start: 'top 90%' },
+        innerText: target,
+        duration: 2,
+        snap: { innerText: 1 },
+        ease: 'power2.out'
+      });
+    });
+
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+  </script>
+
+    // Before/After slider
+    (function() {
+      var before = document.getElementById('baBefore');
+      var label = document.getElementById('baLabel');
+      if (!before || typeof gsap === 'undefined') return;
+      gsap.registerPlugin(ScrollTrigger);
+      var tl = gsap.timeline({
+        scrollTrigger: { trigger: '.ba-section', start: 'top top', end: '+=200%', pin: true, scrub: 0.5, anticipatePin: 1 }
+      });
+      tl.fromTo(before, { clipPath: 'inset(0 0 0 0)' }, { clipPath: 'inset(0 100% 0 0)', duration: 1, ease: 'none' });
+      tl.fromTo(label, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, 0.5);
+    })();
+
+</body>
+</html>
